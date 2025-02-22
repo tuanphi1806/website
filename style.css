@@ -1,0 +1,105 @@
+/* Tổng thể của form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Căn giữa theo chiều dọc */
+    background: #f7f7f7; /* Màu nền nhẹ nhàng */
+}
+
+/* Hộp chứa form */
+.form-box {
+    width: 380px; /* Điều chỉnh chiều rộng hợp lý */
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Căn chỉnh logo */
+.logo-container img {
+    width: 120px; /* Giảm kích thước logo để cân đối */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Căn giữa và tạo khoảng cách dưới */
+}
+
+/* Tab chuyển đổi Sign Up / Log In */
+.tab-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.tab-group .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-group .tab.active {
+    border-bottom: 2px solid #28a745; /* Màu xanh lá giống nút đăng ký */
+}
+
+/* Ô nhập liệu */
+.field-wrap {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.field-wrap input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hiệu ứng khi nhấn vào ô nhập */
+.field-wrap input:focus {
+    border: 1px solid #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+}
+
+/* Nút bấm */
+.button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.button:hover {
+    background: #218838;
+}
+
+/* Forgot password */
+.forgot {
+    text-align: right;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
